@@ -10,6 +10,7 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
   </nav>
   <main class="container-fluid content-width result">
     <div class="card-deck row">
-      <a href="#" class="card">
+      <a href="#" class="card no-smooth">
         <img class="card-img-top" src="img/ph_beaf.jpg">
         <div class="card-body">
           <h5 class="card-title">松阪牛</h5>
@@ -48,7 +49,7 @@
           <small class="text-muted">この和牛の詳細を見る</small>
         </div>
       </a>
-      <a href="#" class="card">
+      <a href="#" class="card no-smooth">
         <img class="card-img-top" src="img/ph_beaf.jpg">
         <div class="card-body">
           <h5 class="card-title">神戸ビーフ</h5>
@@ -67,7 +68,7 @@
           <small class="text-muted">この和牛の詳細を見る</small>
         </div>
       </a>
-      <a href="#" class="card">
+      <a href="#" class="card no-smooth">
         <img class="card-img-top" src="img/ph_beaf.jpg">
         <div class="card-body">
           <h5 class="card-title">飛騨牛</h5>
@@ -86,7 +87,7 @@
           <small class="text-muted">この和牛の詳細を見る</small>
         </div>
       </a>
-      <a href="#" class="card">
+      <a href="#" class="card no-smooth">
         <img class="card-img-top" src="img/ph_beaf.jpg">
         <div class="card-body">
           <h5 class="card-title">近江牛</h5>
@@ -107,7 +108,7 @@
       </a>
     </div>
     <div class="card-deck row">
-      <a href="#" class="card">
+      <a href="#" class="card no-smooth">
         <img class="card-img-top" src="img/ph_beaf.jpg">
         <div class="card-body">
           <h5 class="card-title">仙台牛</h5>
@@ -126,7 +127,7 @@
           <small class="text-muted">この和牛の詳細を見る</small>
         </div>
       </a>
-      <a href="#" class="card">
+      <a href="#" class="card no-smooth">
         <img class="card-img-top" src="img/ph_beaf.jpg">
         <div class="card-body">
           <h5 class="card-title">和牛</h5>
@@ -145,7 +146,7 @@
           <small class="text-muted">この和牛の詳細を見る</small>
         </div>
       </a>
-      <a href="#" class="card">
+      <a href="#" class="card no-smooth">
         <img class="card-img-top" src="img/ph_beaf.jpg">
         <div class="card-body">
           <h5 class="card-title">和牛</h5>
@@ -164,7 +165,7 @@
           <small class="text-muted">この和牛の詳細を見る</small>
         </div>
       </a>
-      <a href="#" class="card">
+      <a href="#" class="card no-smooth">
         <img class="card-img-top" src="img/ph_beaf.jpg">
         <div class="card-body">
           <h5 class="card-title">和牛</h5>
@@ -187,21 +188,9 @@
     <div id="page-top">
       <a href="#"></a>
   </div>
-  <script>
-    $(function(){
-      $('a[href^="#"]').click(function() {
-        var speed = 800;
-        var href= $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top;
-        $('body,html').animate({scrollTop:position}, speed, 'swing');
-        return false;
-      });
-    });
-  </script>
   </main>
   <footer class="content-width">
-    <a href="#">プライバシーポリシー</a>
+    <a href="#" class="no-smooth">プライバシーポリシー</a>
     <p>&copy; 20XX -How Much 和牛 -</p>
   </footer>
   <div class="modal fade" id="search-studio" tabindex="-1" role="dialog" aria-labelledby="serach-studioLabel"
