@@ -9,6 +9,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 </head>
 
 <body>
@@ -183,6 +184,21 @@
         </div>
       </a>
     </div>
+    <div id="page-top">
+      <a href="#"></a>
+  </div>
+  <script>
+    $(function(){
+      $('a[href^="#"]').click(function() {
+        var speed = 800;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+      });
+    });
+  </script>
   </main>
   <footer class="content-width">
     <a href="#">プライバシーポリシー</a>
